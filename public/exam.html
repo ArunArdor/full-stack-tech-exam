@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Full Stack Tech Exam</title>
+  <link rel="stylesheet" href="/styles/style.css">
 </head>
-
 <body>
-  <h1>Full Stack Tech Exam</h1>
-  
-  <!-- 💁🏼‍♂️ you may need to initialize some data before searching. Check the server endpoints -->
-  
-  <div>
-    <h2>Search for Name</h2>
-    <!-- 
-    this form doesn't let you receive data back and put into the <p id="result">.
-    what do we need to do here with an external <script> 
-    -->
-    <form id="nameForm" method="post" action="api/get-name/">
-      <label for="userName">Enter name:</label>
-      <input id="userName" name="userName" placeholder="Enter a name (e.g., barry)" required>
-      <input type="submit" value="Search"> 
-    </form>
-    <p id="result"></p>
-  </div>
-</body>
+  <main class="container">
+    <h1>Full Stack Tech Exam</h1>
 
+    <p class="note">
+      Search for a stored name and get its emoji from the server.
+      If needed, initialize your data first by visiting
+      <code>/api/init-emoji</code> once.
+    </p>
+
+    <section>
+      <h2>Search for Name</h2>
+
+      <div class="search-box">
+        <label for="userName">Enter name:</label>
+        <input id="userName" name="userName" placeholder="Enter a name (e.g., arun)" required>
+        <button id="searchBtn" type="button">Search</button>
+      </div>
+
+      <div id="result" class="result"></div>
+    </section>
+  </main>
+
+  <script src="/scripts/main.js"></script>
+</body>
 </html>
