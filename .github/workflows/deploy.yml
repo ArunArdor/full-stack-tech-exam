@@ -29,6 +29,8 @@ jobs:
           set -e
 
           cd "${{ vars.APP_DIR }}"
+          pwd
+          ls -la
 
           git pull
           npm install
