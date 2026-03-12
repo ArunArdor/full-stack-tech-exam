@@ -29,7 +29,8 @@ jobs:
           set -e
 
           cd "${{ vars.APP_DIR }}"
-          git pull
+          git fetch origin
+          git reset --hard origin/main
           npm install
 
           pm2 delete "${{ vars.PM2_NAME }}" || true
