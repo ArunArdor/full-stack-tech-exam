@@ -2,7 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
-import { MongoClient, ServerApiVersion, ObjectId } from 'mongodb';
+import { MongoClient, ServerApiVersion } from 'mongodb';
 
 dotenv.config();
 
@@ -102,5 +102,5 @@ no code mods needed but this uses the PORT variable for PaaS deployments
 */ 
 //start the server. 
 app.listen(PORT, () => {
-  console.log("MONGO_URI:", process.env.MONGO_URI);
+  console.log(`Server running on port ${PORT}`);
 })
