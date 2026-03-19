@@ -14,7 +14,7 @@
 | **Pull Request** | [https://github.com/barrycumbie/full-stack-tech-exam/pull/7](https://github.com/barrycumbie/full-stack-tech-exam/pull/7) | 
 | **Milestone** | [https://github.com/ArunArdor/full-stack-tech-exam/milestone/1](https://github.com/ArunArdor/full-stack-tech-exam/milestone/1) | 
 | **Successful CI/CD Action** | [https://github.com/ArunArdor/full-stack-tech-exam/actions/runs/23026012382](https://github.com/ArunArdor/full-stack-tech-exam/actions/runs/23026012382) | 
-| **ssh cmd to your gcp** | `ssh -i student-key arunbatta821@34.135.34.245` | 
+| **ssh cmd to your gcp** | `ssh -i student-key bcumbie@34.135.34.245` | 
 
 ---
 
